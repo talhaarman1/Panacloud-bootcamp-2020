@@ -30,8 +30,11 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: GitHub Action for npx
       uses: mikeal/npx@1.0.0
-    - name: build
-      run: npx run build
+    - name: GitHub Action for Yarn
+      uses: Borales/actions-yarn@v2.3.0
+    - name: buil using yarn
+      run: yarn build
+
     - name: install surge
       run:  npm install -g surge
     - name: deploy ap
