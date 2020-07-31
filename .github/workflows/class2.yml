@@ -33,7 +33,7 @@ jobs:
     - name: build
       run: npm run build
     - name: install surge
-      run:  npm install -g surge
+      run:  npx install -g surge
     - name: deploy ap
       run: surge ././class2/build bootcamp2020.lec2.surge.sh --token ${{Secrets.SURGE_TOKEN}}
       
