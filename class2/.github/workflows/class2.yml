@@ -28,8 +28,7 @@ jobs:
         version: 12
 
     # Runs a set of commands using the runners shell
-    - name: GitHub Action for npx
-      uses: mikeal/npx@1.0.0
+   
     - name: GitHub Action for Yarn
       uses: Borales/actions-yarn@v2.3.0
     - name: buil using yarn
@@ -38,6 +37,6 @@ jobs:
     - name: install surge
       run:  npm install -g surge
     - name: deploy ap
-      run: surge ././class2/build bootcamp2020.lec2.surge.sh --token ${{Secrets.SURGE_TOKEN}}
+      run: surge ./build bootcamp2020.lec2.surge.sh --token ${{Secrets.SURGE_TOKEN}}
       
 
