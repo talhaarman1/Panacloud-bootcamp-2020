@@ -31,7 +31,7 @@ jobs:
     - name: GitHub Action for npx
       uses: mikeal/npx@1.0.0
     - name: build
-      run: npx build
+      run: npm run build
     - name: install surge
       run:  npm install -g surge
     - name: deploy ap
